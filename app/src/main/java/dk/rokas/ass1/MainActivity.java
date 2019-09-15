@@ -57,10 +57,13 @@ public class MainActivity extends AppCompatActivity{
         //Handle item selection
         switch(item.getItemId()){
             case R.id.vejledning:
-                System.out.println("vejledning");
+                tv.setText(String.format("vejledning"));
+                //System.out.println("vejledning");
                 return true;
             case R.id.indstillinger:
-                System.out.println("instillinger");
+                tv.setText(String.format("instillinger"));
+                //System.out.println("instillinger");
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
