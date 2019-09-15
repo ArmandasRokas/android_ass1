@@ -1,8 +1,12 @@
 package dk.rokas.ass1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,5 +43,26 @@ public class MainActivity extends AppCompatActivity{
                 tv.setText(String.format("Velkommen %s",input));
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        //Handle item selection
+        switch(item.getItemId()){
+            case R.id.vejledning:
+                System.out.println("vejledning");
+                return true;
+            case R.id.indstillinger:
+                System.out.println("instillinger");
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
