@@ -22,15 +22,12 @@
 
 </br>
 
-**Table of contents**[^wewe]
+**Table of contents**
 
 [TOC]
 
-[^wewe]: dwewew
-
-
-
  <div style="page-break-after: always;"></div>
+ 
 ## Programmatisk layout
 
 ```java
@@ -68,7 +65,7 @@ TimeView time = findViewById(R.id.actualtime);
 
 ### Fordele
 
-- Giver en flot resultat
+- Giver et flot resultat
 - Adskiller brugergrænserflade fra Java-koden (logikken)
 - Man kan gøre bruge af et fedt værktøj i Android studio, som hjælper til at opsætte layoutet
 - Man kan stadigvæk modificere `Views` programmatisk
