@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity{
     private Button b1;
     private Button b2;
     private EditText et;
+    private WebView wv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity{
         b1 = findViewById(R.id.button1);
         b2 = findViewById(R.id.button2);
         et = findViewById(R.id.editText);
+        wv = findViewById(R.id.webview);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +43,8 @@ public class MainActivity extends AppCompatActivity{
             public void onClick(View v) {
                 System.out.println("Der blev trykket");
                 String input = et.getText().toString();
-                tv.setText(String.format("Velkommen %s",input));
+                tv.setText(String.format("%s",input));
+                wv.loadUrl(input);
             }
         });
     }
