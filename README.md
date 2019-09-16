@@ -1,5 +1,5 @@
 <div align="right">
-    <p>09/XX/2019</p> 
+    <p>09/16/2019</p> 
 <p>Armandas Rokas (s185144) 
 </p>
 </div>
@@ -26,6 +26,10 @@
 
 [TOC]
 
+</br>
+</br>
+</br>
+</br>
 
 Github: https://github.com/ArmandasRokas/android_ass1
 
@@ -80,8 +84,6 @@ TimeView time = findViewById(R.id.actualtime);
 
 
 ## Står setContentView() øverst eller nederst når man bruger deklarativt (XML) layout ? Hvorfor?
-
-==Hvad menes der med det?  I koden eller I appen?==
 
 - Øverset , fordi `setContentView()` pakker `Views` ud på skærmen, og kun bagefter `Views` kan findes ved at bruge `findViewById()`, og ikke før `setContentView()`, fordi det er der, hvor`Views` først bliver instantieret
 
