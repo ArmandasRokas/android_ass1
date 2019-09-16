@@ -26,8 +26,10 @@
 
 [TOC]
 
+
+Github: https://github.com/ArmandasRokas/android_ass1
+
  <div style="page-break-after: always;"></div>
- 
 ## Programmatisk layout
 
 ```java
